@@ -1,3 +1,13 @@
+# Create a resource group if it doesn’t exist
+resource "azurerm_resource_group" "myterraformgroup" {
+  name     = "myResourceGroup"
+  location = "eastus"
+
+  tags = {
+    environment = "Terraform Demo"
+  }
+}
+
 # Create virtual network
 resource "azurerm_virtual_network" "myterraformnetwork" {
   name                = "myVnet"
