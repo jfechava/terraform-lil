@@ -6,8 +6,7 @@ resource "aws_vpc" "environment-example-two" {
         Name = "terraform-aws-vpc-example-two"
     }
 }
-
 resource "aws_subnet" "subnet1" {
-    cidr_block = aws_vpc.environment-example-two
     vpc_id = aws_vpc.environment-example-two.id
+    cidr_block = "10.0.0.0/24"
 }
