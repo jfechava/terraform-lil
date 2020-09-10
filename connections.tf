@@ -5,7 +5,7 @@ provider "aws" {
 provider "google" {
   credentials = "${file(".../account.json")}"
   project = "thrashingcorecode"
-  region = "us-west1"
+  region = "us-east-1"
 }
 
 provider "azurerm" {
