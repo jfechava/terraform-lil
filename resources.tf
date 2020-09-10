@@ -3,3 +3,4 @@ resource "aws_vpc" "environment_example_two" {
     enable_dns_hostnames = true
     enable_dns_support = true
 }
+resource "aws_"
