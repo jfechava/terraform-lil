@@ -7,3 +7,7 @@ resource "aws_vpc" "environment-example-two" {
     }
 }
 
+resource "aws_subnet" "subnet1" {
+    cidr_block = aws_vpc.environment-example-two
+    vpc_id = aws_vpc.environment-example-two.id
+}
